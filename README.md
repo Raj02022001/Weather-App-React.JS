@@ -1,4 +1,4 @@
-Weather App
+
 This is a simple Weather Application built using React. The app allows users to search for weather information by city name. It fetches data from a weather API and displays the city's current temperature, humidity, and other weather details.
 
 Features
