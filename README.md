@@ -8,26 +8,26 @@ Icon Representation: Weather icons change based on the weather conditions (e.g.,
 Error Handling: Displays a warning message if the searched city is not found in the weather API database.
 Components
 
-1. WeatherApp.jsx
+1. WeatherApp.jsx:
 The main component of the application that coordinates the search functionality and displays the weather information using the SearchBox and InfoBox components.
 
 State Management: Manages the state of the weather information using the useState hook.
 Update Function: The updateInfo function is passed to the SearchBox component to update the weather information once it is fetched.
 
-2. SearchBox.jsx
+2. SearchBox.jsx:
 A form component where users can input the city name and trigger the weather search.
 
 Fetch Weather Data: Calls the weather API using the city name, retrieves weather details, and sends them back to the parent component (WeatherApp).
 Form Handling: Manages input change and form submission using controlled components and event handlers.
 Error Message: Displays an error message if no data is found for the entered city.
 
-3. InfoBox.jsx
+3. InfoBox.jsx:
 A display component that shows the weather information in a card format using Material UI.
 
 Dynamic Content: The component dynamically updates the content such as temperature, humidity, and weather conditions based on the info prop passed by the parent.
 Weather Icons: Displays different weather icons for hot, cold, and rainy conditions.
 Images: Background images change based on weather conditions, providing a visual representation (e.g., sunny, rainy, or cold weather images).
-Technologies Used
+Technologies Used:
 React: Frontend framework for building user interfaces.
 Material UI: React component library for styling and layout.
 OpenWeather API: External API for retrieving real-time weather data.
