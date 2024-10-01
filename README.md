@@ -52,7 +52,7 @@ npm (>=6.x.x) or yarn (>=1.x.x)
 
 A free API key from OpenWeatherMap
 
-Usage
+###Usage
 
 Enter the name of the city in the search box.
 
