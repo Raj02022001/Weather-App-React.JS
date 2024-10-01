@@ -26,3 +26,55 @@ Temperature > 26°C: Displays a sunny weather icon and a warm image.
 Humidity > 80%: Displays a storm icon and a rainy image.
 
 Else: Displays a cold weather icon and a cool weather image.
+
+2. SearchBox.jsx
+This component handles the search functionality. It allows users to input the name of a city and fetches weather data using an external API.
+
+The component features a form with a text field (for the city name) and a submit button.
+
+Upon submitting, it fetches the weather data from the API and updates the parent component (WeatherApp) with the fetched information.
+It also displays an error message if the API does not find the entered city.
+
+3. WeatherApp.jsx
+This is the main component that renders both SearchBox and InfoBox. It maintains the state for weather information and passes data between the child components.
+
+The state weatherInfo holds the weather data for the searched city.
+It updates weatherInfo based on the results from the search query in SearchBox
+
+###Getting Started
+
+Prerequisites
+To run this application, you will need:
+
+Node.js (>=14.x.x)
+
+npm (>=6.x.x) or yarn (>=1.x.x)
+
+A free API key from OpenWeatherMap
+
+Usage
+
+Enter the name of the city in the search box.
+
+View the weather details, including temperature, humidity, and weather conditions.
+
+If the city is invalid, an error message will be displayed.
+
+###API Integration
+
+The app fetches weather data from the OpenWeatherMap API. The API response provides the following key data:
+
+City: Name of the city.
+
+Temperature: Current temperature in Celsius.
+
+Humidity: Current humidity percentage.
+
+TempMax: Maximum recorded temperature for the day.
+
+TempMin: Minimum recorded temperature for the day.
+
+Weather: Description of the weather (e.g., cloudy, clear sky).
+
+###License
+This project is licensed under the MIT License - see the LICENSE file for details.
