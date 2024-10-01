@@ -36,7 +36,7 @@ Getting Started
 Prerequisites:
 Before running this project, ensure that you have the following installed:
 
-Node.js (v14 or higher)
+Node.js (v14 or higher),
 npm (v6 or higher)
 
 Usage:
